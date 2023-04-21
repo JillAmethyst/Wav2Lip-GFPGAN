@@ -99,7 +99,7 @@ def main():
     model_path = os.path.join('GFPGAN-master/experiments/pretrained_models', model_name + '.pth')
     if not os.path.exists('GFPGAN-master/experiments/pretrained_models'):
         os.makedirs('GFPGAN-master/experiments/pretrained_models')
-        cmd = 'wget 'https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pth' -O 'GFPGAN-master/experiments/GFPGANv1.3pth'
+        cmd = "wget 'https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pth' -O 'GFPGAN-master/experiments/pretrained_models/GFPGANv1.3.pth'"
         os.system(cmd)
     if not os.path.isfile(model_path):
         model_path = os.path.join('realesrgan/weights', model_name + '.pth')
